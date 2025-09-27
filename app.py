@@ -10,65 +10,74 @@ st.set_page_config(page_title="🤖 AI-Driven Adaptive Scheduling", layout="wide
 # Custom CSS Styling
 # =========================
 st.markdown("""
+    
     <style>
-        /* App background */
+        /* Background gradient */
         .stApp {
-            background: linear-gradient(135deg, #016f85, #00b4d8, #90e0ef);
-            background-attachment: fixed;
+            background: linear-gradient(135deg, #a41a1a, #1a1a40);
             color: white;
         }
 
         /* Title */
         h1 {
             text-align: center;
-            color: #ffffff;
-            font-size: 36px !important;
+            font-size: 2.5em !important;
+            background: -webkit-linear-gradient(#ffcc00, #ff6600);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-weight: bold;
-            text-shadow: 2px 2px 4px #00000050;
-        }
-
-        /* Subheaders */
-        h2, h3 {
-            color: #ffdd57 !important;
-        }
-
-        /* Dataframe style */
-        .stDataFrame {
-            border: 2px solid #ffffff33;
-            border-radius: 10px;
-            overflow: hidden;
         }
 
         /* Buttons */
         button[kind="primary"] {
-            background-color: #ff6b6b !important;
-            color: white !important;
-            border-radius: 10px !important;
-            font-size: 16px !important;
+            background: linear-gradient(90deg, #ff6600, #ffcc00) !important;
+            color: black !important;
+            border-radius: 12px !important;
             font-weight: bold !important;
         }
+        button[kind="primary"]:hover {
+            background: linear-gradient(90deg, #ffcc00, #ff6600) !important;
+            transform: scale(1.05);
+        }
 
-        /* Metric cards */
+        /* Metric Cards */
         .metric-card {
-            background: rgba(255, 255, 255, 0.15);
-            padding: 12px 20px;
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
             border-radius: 12px;
             margin: 8px 0;
-            font-size: 18px;
-            font-weight: bold;
-            color: #fff;
+            font-size: 1.2em;
             text-align: center;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
         }
 
-        /* Inputs */
-        .stNumberInput, .stSelectbox, .stMultiSelect {
-            background-color: #ffffffaa !important;
-            border-radius: 8px;
-            padding: 5px;
+        /* Dataframe */
+        .dataframe {
+            background: white !important;
+            color: black !important;
+            border-radius: 8px !important;
+        }
+
+        /* File uploader */
+        section[data-testid="stFileUploader"] {
+            background: rgba(255,255,255,0.1);
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        /* Subheaders */
+        h2, h3 {
+            color: #ffcc00 !important;
+            font-weight: bold !important;
         }
     </style>
-""", unsafe_allow_html=True)
+    """,
+    unsafe_allow_html=True
+)
+
+
+
+        
 
 
 
