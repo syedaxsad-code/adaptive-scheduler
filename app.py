@@ -6,6 +6,70 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 
 st.set_page_config(page_title="🤖 AI-Driven Adaptive Scheduling", layout="wide")
+# =========================
+# Custom CSS Styling
+# =========================
+st.markdown("""
+    <style>
+        /* App background */
+        .stApp {
+            background: linear-gradient(135deg, #016f85, #00b4d8, #90e0ef);
+            background-attachment: fixed;
+            color: white;
+        }
+
+        /* Title */
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 36px !important;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #00000050;
+        }
+
+        /* Subheaders */
+        h2, h3 {
+            color: #ffdd57 !important;
+        }
+
+        /* Dataframe style */
+        .stDataFrame {
+            border: 2px solid #ffffff33;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Buttons */
+        button[kind="primary"] {
+            background-color: #ff6b6b !important;
+            color: white !important;
+            border-radius: 10px !important;
+            font-size: 16px !important;
+            font-weight: bold !important;
+        }
+
+        /* Metric cards */
+        .metric-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 12px 20px;
+            border-radius: 12px;
+            margin: 8px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* Inputs */
+        .stNumberInput, .stSelectbox, .stMultiSelect {
+            background-color: #ffffffaa !important;
+            border-radius: 8px;
+            padding: 5px;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 
 
 
