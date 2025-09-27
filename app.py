@@ -1,8 +1,7 @@
-
+python
 import streamlit as st
 import pandas as pd
 import random
-import re
 
 # --- Page Configuration ---
 st.set_page_config(
@@ -11,14 +10,18 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- Background Styling ---
+# --- Background Styling (Applies to whole app) ---
 st.markdown("""
-<style>
-.stApp {
-    background: linear-gradient(135deg, #0f4c75, #3282b8, #56cfe1);
-    background-attachment: fixed;
-}
-</style>
+    <style>
+    .stApp {
+        background: linear-gradient(135deg, #0f4c75, #3282b8, #56cfe1);
+        background-attachment: fixed;
+        color: white;
+    }
+    .stSidebar {
+        background: rgba(15, 76, 117, 0.8);
+    }
+    </style>
 """, unsafe_allow_html=True)
 
 # --- Title ---
@@ -45,5 +48,5 @@ if st.sidebar.button("Generate Schedule"):
         st.subheader("Generated Schedule")
         st.dataframe(df, use_container_width=True)
     else:
-        st.warning("Please provide both tasks and members.")
+        st.warning("⚠️ Please provide both tasks and members.")
 
