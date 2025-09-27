@@ -6,6 +6,80 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 
 st.set_page_config(page_title="🤖 AI-Driven Adaptive Scheduling", layout="wide")
+st.markdown("""
+<style>
+/* Global font and background */
+html, body, [class*="css"]  {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9fb;
+    color: #2e2e2e;
+}
+
+/* Title */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Subheaders */
+h2, h3 {
+    color: #34495e;
+    font-weight: 600;
+    border-left: 4px solid #3498db;
+    padding-left: 8px;
+    margin-top: 25px;
+}
+
+/* File uploader */
+.css-1d391kg {
+    border: 2px dashed #3498db !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    background-color: #eef6fc !important;
+}
+
+/* Buttons */
+.stButton>button {
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    color: white;
+    border-radius: 12px;
+    font-weight: bold;
+    padding: 0.6em 1.2em;
+    border: none;
+    transition: all 0.3s ease;
+}
+.stButton>button:hover {
+    background: linear-gradient(90deg, #2980b9, #27ae60);
+    transform: scale(1.05);
+}
+
+/* Dataframe container */
+.stDataFrame {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Metric cards */
+.metric-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 18px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    border-left: 6px solid #3498db;
+}
+</style>
+""", unsafe_allow_html=True)
+
 
 
 
