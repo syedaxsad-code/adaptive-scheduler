@@ -46,4 +46,4 @@ if st.sidebar.button("Generate Schedule"):
         st.dataframe(df, use_container_width=True)
     else:
         st.warning("Please provide both tasks and members.")
-```
+
